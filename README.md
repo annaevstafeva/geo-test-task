@@ -45,4 +45,4 @@ assets:
 
 docker-compose exec application rails assets:precompile
 
-localhost:3000
+Открыть localhost:3000 в браузере
