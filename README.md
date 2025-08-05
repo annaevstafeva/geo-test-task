@@ -35,7 +35,7 @@ cd geo-test-task
 
 docker-compose build
 
-docker-compose up
+docker-compose up -d
 
 dump: 
 
