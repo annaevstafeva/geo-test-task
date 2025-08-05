@@ -5,12 +5,7 @@
       <%= form_with scope: :saved_distance, url: saved_distances_path, method: :post, format: :turbo_stream, id: "distance-selector-form", data: { turbo: true }, class: "" do |f| %>
         <%= f.hidden_field :from, id: "from_city" %>
         <%= f.hidden_field :to, id: "to_city" %>
-        <div class="relative group inline-block">
           <%= f.submit "Рассчитать", class: "button-emerald px-5 py-1.5", disabled: true, id: "calculate-button", data: { tooltip: true } %>
-          <div class="absolute w-40 -top-8 left-1/2 -translate-x-1/2 bg-stone-800/70 text-white text-xs rounded px-2 py-1 opacity-0 transition-opacity duration-200 group-hover:opacity-100 pointer-events-none" id="tooltip">
-            Нет сохранённых/выбранных мест
-          </div>
-        </div>
       <% end %>
     </div>
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
