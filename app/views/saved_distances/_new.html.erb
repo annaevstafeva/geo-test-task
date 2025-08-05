@@ -4,7 +4,7 @@
 
     <%= ff.text_field :to, value: '', placeholder: "Куда...", class: 'input-text', required: true %>
 
-    <%= ff.submit "Calculate", disable_with: 'Рассчитать', class: 'button-emerald px-5 py-2.5' %>
+    <%= ff.submit "Рассчитать", disable_with: 'Рассчитать', class: 'button-emerald px-5 py-2.5' %>
   <% end %>
 
   <% if local_assigns[:error].present? %>
