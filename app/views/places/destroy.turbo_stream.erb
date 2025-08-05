@@ -1,0 +1,4 @@
+<%= turbo_stream.remove dom_id(@place) %>
+<% @related_distances.each do |distance| %>
+  <%= turbo_stream.remove dom_id(distance) %>
+<% end %>
