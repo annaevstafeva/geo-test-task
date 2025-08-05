@@ -28,10 +28,16 @@ Web-приложение для расчёта прямого расстояни
 
 ## 🚀 Быстрый старт (Docker)
 
-```bash
+
 git clone https://github.com/annaevstafeva/geo-test-task.git
+
+cd geo-test-task
+
 docker-compose build
 docker-compose up
 
-```
-for dump: cat db/dumps/dump_05-08-2025_15_09_03.sql | docker exec -i postgres psql -U geo_test_task
+dump: 
+cat db/dumps/dump_05-08-2025_15_09_03.sql | docker exec -i postgres psql -U geo_test_task
+
+assets:
+docker-compose exec application rails assets:precompile
