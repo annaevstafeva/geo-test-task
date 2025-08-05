@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+for dump: cat db/dumps/dump_05-08-2025_15_09_03.sql | docker exec -i postgres psql -U geo_test_task
